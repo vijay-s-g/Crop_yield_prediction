@@ -27,9 +27,15 @@ function Navbar() {
         </div>
 
         {/* CTA */}
-        <Link to="/predict" className="nav-button">
-          Get Started
-        </Link>
+        <div className="nav-actions">
+          <Link to="/register" className="nav-register">
+            Register
+          </Link>
+
+          <Link to="/login" className="nav-button">
+            Login
+          </Link>
+        </div>
       </div>
     </nav>
   );

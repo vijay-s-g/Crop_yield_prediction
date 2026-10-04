@@ -95,20 +95,14 @@ function Predict() {
         },
 
         body: JSON.stringify({
+          user_id: Number(localStorage.getItem("user_id")),
           Year: Number(formData.Year),
-
           State: formData.State,
-
           Crop: formData.Crop,
-
           Season: formData.Season,
-
           Area: Number(formData.Area),
-
           Annual_Rainfall: Number(formData.Annual_Rainfall),
-
           Fertilizer: Number(formData.Fertilizer),
-
           Pesticide: Number(formData.Pesticide),
         }),
       });
